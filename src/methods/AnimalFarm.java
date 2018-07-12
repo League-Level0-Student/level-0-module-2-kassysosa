@@ -9,6 +9,7 @@ import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
 public class AnimalFarm {
@@ -48,7 +49,7 @@ String llamaFile = "llama.wav";
 
 public void playNoise(String soundFile) {
 	try {
-		 Clip clip = AudioSystem.getClip();
+		 AudioClip clip = JApplet.newAudioClip(getClass().getResource(soundfile));                
 		 clip.open(AudioSystem.getAudioInputStream(getClass().getResource(soundFile)));
 		 clip.start();
 		 Thread.sleep(3400);
