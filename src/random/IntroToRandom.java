@@ -7,7 +7,6 @@ import java.util.Random;
 
 public class IntroToRandom {
 	public static void main(String[] args) {
-		
 		int r = 0;
 		
 		//3. Now make r random. 
