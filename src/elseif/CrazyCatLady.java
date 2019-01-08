@@ -24,13 +24,13 @@ else if(value<3 && value > 0){
 	}
 
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
-	else if(value = 0) {	
+	else if(value == 0) {	
 		playVideo("https://youtu.be/kMhw5MFYU0s");
 		
 	}
-
+	}
 	static void 
-	playVideo(String videoURL); {
+	playVideo(String videoURL) {
 		try {
 			URI uri = new URI(videoURL);
 			java.awt.Desktop.getDesktop().browse(uri);
@@ -39,5 +39,5 @@ else if(value<3 && value > 0){
 		}
 	}
 	}
-}
+
 
