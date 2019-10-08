@@ -49,7 +49,7 @@ String llamaFile = "llama.wav";
 
 public void playNoise(String soundFile) {
 	try {
-		 AudioClip clip = JApplet.newAudioClip(getClass().getResource(soundfile));                
+		             
 		 clip.open(AudioSystem.getAudioInputStream(getClass().getResource(soundFile)));
 		 clip.start();
 		 Thread.sleep(3400);
